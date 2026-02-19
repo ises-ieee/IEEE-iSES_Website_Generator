@@ -1,0 +1,46 @@
+{
+  "deadlines": {
+    "authorRegistrationDisplay": "15th October 2026",
+    "authorRegistrationShort": "15-Oct-2026"
+  },
+  "fees": {
+    "outsideIndiaUSD": {
+      "title": "Persons from outside India (US$)",
+      "rows": [
+        { "label": "Authors (IEEE Member)", "before": "$400", "after": "$425" },
+        { "label": "Authors (non-member)", "before": "$460", "after": "$485" },
+        { "label": "Students (IEEE Member)", "before": "$260", "after": "$275" },
+        { "label": "Students (non-member)", "before": "$305", "after": "$425" },
+        { "label": "Non-Authors/Delegates/Additional-paper", "before": "$265", "after": "$280" },
+        { "label": "Tutorial 2 days (Includes food expenses, pad/pen)", "before": "$30", "after": "$35", "isTutorial": true }
+      ]
+    },
+    "inCountryINR": {
+      "title": "Persons in country (Rupee ₹)",
+      "rows": [
+        { "label": "Authors (IEEE Member)", "before": "₹ 24,000", "after": "₹ 26,000" },
+        { "label": "Authors (non-member)", "before": "₹ 28,000", "after": "₹ 30,000" },
+        { "label": "Students (IEEE Member)", "before": "₹ 14,000", "after": "₹ 15,000" },
+        { "label": "Students (non-member)", "before": "₹ 17,000", "after": "₹ 18,500" },
+        { "label": "Non-Authors/Delegates/Additional-paper", "before": "₹ 13,000", "after": "₹ 14,000" },
+        { "label": "Tutorial 2 days (Includes food expenses, pad/pen)", "before": "₹ 1,000", "after": "₹ 1,500", "isTutorial": true }
+      ]
+    },
+    "tutorialFootnoteSymbol": "*",
+    "tutorialFootnoteText": "The Tutorials are complimentary for registrants of the Symposium; however, a separate data filling is required at the portal."
+  },
+  "payment": {
+    "portalUrl": "https://ieee-ises.in/",
+    "bank": {
+      "accountNo": "XXXXXXX (under Progress)",
+      "accountHolder": "IEEE iSES NIT Goa",
+      "ifsc": "CNRB0007633",
+      "bankName": "CANARA BANK",
+      "bankAddress": "NIT Goa Campus, Cuncolim, Salcete, South Goa, 403703, India."
+    }
+  },
+  "contacts": [
+    { "name": "Prof. Shivanaryan Patidar", "email": "" },
+    { "name": "Mrs. Geetha S. Shet", "email": "" }
+  ]
+}
