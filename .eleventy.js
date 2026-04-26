@@ -17,10 +17,10 @@ module.exports = function (eleventyConfig) {
       // repo-root/
       //   IEEE-iSES_Website_Generator/
       //   IEEE_iSES_2026_Website/   <-- generated here
-      output: site.outputDir || "../IEEE_iSES_2026_Website"
+      output: site.outputDir || "../iSES_2026_Website"
     },
 
     // ✅ GitHub Pages subfolder prefix
-    pathPrefix: site.pathPrefix || "/IEEE_iSES_2026_Website/"
+    pathPrefix: site.pathPrefix || "/iSES_2026_Website/"
   };
 };
