@@ -4,20 +4,43 @@ pageTitle: "iSES"
 ---
 
 <div id="page-wrapper">
-<section class="wrapper style2" id="intro">
-  <div class="title">Program Committee</div>
-  <div class="container">
-    {% for section in committees.program %}
-      <div class="category">
-        <h2>{{ section.title }}</h2>
-        <div class="persons">
-          {% for pid in section.members %}
-            {% set person = people[pid] %}
-            {% include "components/person-card.njk" %}
-          {% endfor %}
+  <section class="wrapper style2" id="intro">
+    <div class="title">Program Committee</div>
+    <div class="container">
+
+      {% for section in committees.program %}
+        <div class="category">
+          <h2>{{ section.title }}</h2>
+          <div class="persons">
+            {% for pid in section.members %}
+              {% set person = people[pid] %}
+              {% include "components/person-card.njk" %}
+            {% endfor %}
+          </div>
         </div>
+      {% endfor %}
+
+      <!-- Complete TPC Members Section -->
+      <div class="category">
+        <h2>Technical Program Committee Members</h2>
+
+        <!-- PDF Viewer -->
+        <div class="pdf-viewer" style="width: 100%; height: 800px; margin-top: 20px;">
+          <iframe 
+            src="{{site.basePath}}/images/tpc-members.pdf" 
+            width="100%" 
+            height="100%" 
+            style="border: 1px solid #ccc;">
+          </iframe>
+        </div>
+
+        <p style="margin-top: 15px;">
+          <a href="{{site.basePath}}/images/tpc-members.pdf" target="_blank">
+            Open PDF in new tab
+          </a>
+        </p>
       </div>
-    {% endfor %}
-  </div>
-</section>
+
+    </div>
+  </section>
 </div>
