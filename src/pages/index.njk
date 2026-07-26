@@ -118,29 +118,43 @@ bodyClass: "homepage is-preload"
   </section>
 
 
-  <!-- KEYNOTE SPEAKERS (from keynotes.json) -->
-  <section id="keynote-speakers" class="home-section">
-    <div class="container">
-      <h2 class="section-title center">Keynote Speakers</h2>
+<!-- KEYNOTE SPEAKERS -->
+<section id="keynote-speakers" class="home-section">
+  <div class="container">
+    <h2 class="section-title center">Keynote Speakers</h2>
 
-      <div class="people-grid">
-        {% for p in keynotes %}
-          <a class="person-card" href="keynotes.html#{{ p.id }}">
-            <img alt="{{ p.name }}" src="{{site.basePath}}/{{ p.photo }}" class="inline-19a6131930"/>
-            <div class="person-card__meta">
-              <div class="person-card__name">{{ p.name }}</div>
-              {# affiliation is a single string in your JSON; split lines only in CSS/wrap #}
-              <div class="person-card__org">{{ p.affiliation }}</div>
-              {# optional: show title if you want; remove if not desired on homepage #}
-              {% if p.title and p.title != "" %}
-                <div class="person-card__role">{{ p.title }}</div>
-              {% endif %}
+    <div class="people-grid">
+      {% for p in keynotes %}
+        <a
+          class="person-card keynote-home-card"
+          href="{{ site.basePath }}/keynotes.html#{{ p.id }}"
+        >
+          {% if p.photo %}
+            <div class="keynote-home-card__image-wrap">
+              <img
+                class="keynote-home-card__image"
+                src="{{ site.basePath }}{{ p.photo }}"
+                alt="{{ p.name }}"
+              >
             </div>
-          </a>
-        {% endfor %}
-      </div>
+          {% endif %}
+
+          <div class="keynote-home-card__content">
+            <div class="person-card__name">
+              {{ p.name }}
+            </div>
+
+            <div class="person-card__org">
+              {% for line in p.affiliation %}
+                <div class="person-card__org-line">{{ line }}</div>
+              {% endfor %}
+            </div>
+          </div>
+        </a>
+      {% endfor %}
     </div>
-  </section>
+  </div>
+</section>
 
 
   <!-- SPONSORS (from sponsors.json) -->
