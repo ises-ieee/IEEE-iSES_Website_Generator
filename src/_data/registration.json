@@ -30,13 +30,13 @@
     "tutorialFootnoteText": "The Tutorials are complimentary for registrants of the Symposium; however, a separate data filling is required at the portal."
   },
   "payment": {
-    "portalUrl": "https://ieee-ises.in/",
+    "portalUrl": "",
     "bank": {
-      "accountNo": "XXXXXXX (under Progress)",
+      "accountNo": "132822010001627",
       "accountHolder": "iSES NIT Goa",
-      "ifsc": "XXXX",
-      "bankName": "XXXX",
-      "bankAddress": "NIT Goa Campus, Cuncolim, Salcete, South Goa, 403703, India."
+      "ifsc": "UBIN0913286",
+      "bankName": "Union Bank of India",
+      "bankAddress": "Goa College of Engineering, SC04 SC10, New Shopping Complex, Farmagudi, Ponda, North Goa, Goa - 403401"
     }
   },
   "contacts": [
