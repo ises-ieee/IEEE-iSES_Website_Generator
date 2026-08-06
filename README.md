@@ -1,5 +1,7 @@
 # IEEE-iSES Website Maintenance Work Document
 
+export PATH="/c/Program Files/nodejs:$PATH"
+
 ## Purpose
 
 This document explains how to maintain, update, and generate the
